@@ -1,0 +1,35 @@
+1.hilt 
+	A.make it easy (now how to pass thing  in dagger without hilt)
+	B.To Rememper
+		i. Make BasicApplication and pass it in Manifest
+		ii.Make App Module
+   		 to determine life time of inject the dependency
+   			  a.ApplicationComponent: life time of the application deprecated use SingletonComponent
+  			  b.FragmentComponent: life time of Fragment
+   			  c.ActivityComponent: life time of Activity
+   			  d.ServiceComponent: life time of Service
+		iii.some annotation and keyword and its use
+ 			  a. @Singleton:To have single instance from this function
+  			  b. @Provides:To make hilt understand that the return of this function i need to inject it
+   			  c.@HiltViewModel on viewModel instead of @ViewModelInject deprecated
+   			  d.@HiltAndroidApp on BasicApplication
+   			  e.private val viewModel: NameOfViewModel by viewModels() to inject viewModel Factory in Fragment
+    			  f.@AndroidEntryPoint : in any activity or fragment we use hilt on it
+  			  g. @Inject: to inject variable in constructor or out of it
+    			  h.@InstallIn:on function on app module that we write to inject what its inside after that
+           		  i.@Module:TO define my appModule
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2.permission[Easy permission Library/Try to replace onRequestPermissionsResult which deprecated in fragment]
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+3.Maps:
+	A.to deal with map need [Map view or Map Fragment]
+		i.Map Fragment: its Map View in Fragment and reason why google did it that each map has life cycle so map view in fragment have also life cycle 
+					of Fragment so i not need to wory about map life Cycle
+
+		ii.MapView:use it if i need map in fragment i create something on it but i have to implement all map life cycle in this fragment life cycle long process
+				but i do in track fragment in this app
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+4.i have a problem with intent have to understand it
+5.service and banding service
