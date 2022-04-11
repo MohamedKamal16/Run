@@ -6,14 +6,25 @@
 ========================================================================
 
 Technologies:
+
 -Kotlin
+
 -Navigation Component
+
 -MVVM Architecture.
+
 -Coroutine
+
 -Room database for caching
+
 -Google Location Api
+
 -Hilt(dependency injection)
+
 -Shared preference
+
 -LiveData
+
 -Notification
+
 ============
